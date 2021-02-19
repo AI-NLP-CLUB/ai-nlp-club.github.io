@@ -16,7 +16,6 @@ a:hover {
 
 html,
 body {
-
   background-color: #333;
 }
 
@@ -90,4 +89,29 @@ body {
   color: rgba(255, 255, 255, .5);
 }
 
+
+/* staff css starts here */
+.section-staff .single-person {
+	padding: 20px;
+	border-radius: 5px;
+}
+
+
+.section-staff .single-person .person-image {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    border: 4px dashed transparent;
+    transition: padding .3s;
+}
+
+.section-staff .single-person:hover .person-image {
+	padding: 12px;
+    border: 4px dashed #fff;
+}
+
+.section-staff .single-person .person-image img {
+	width: 100%;
+    border-radius: 50%;
+}
 
