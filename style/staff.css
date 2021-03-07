@@ -22,7 +22,7 @@ html, body{
 }
 
 .section-staff .single-person .person-image img {
-	width: 100%;
+	width: 125px;
     border-radius: 50%;
 }
 
