@@ -1,3 +1,6 @@
+.main-container{
+    max-width: 100%;
+}
 #demo {
     height:100%;
     position:relative;
