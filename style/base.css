@@ -27,8 +27,33 @@ body {
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
 
+
+.clg {
+  position: absolute;
+    top: 1.3rem;
+  left: 3rem;
+}
+
+.clg-logo {
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+}
+
+.clg-name{
+  display: inline-block;
+  max-width: 200px;
+  text-align: left;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, 1);
+  vertical-align: bottom;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
 .main-container {
   max-width: 42em;
+  height: 100% !important;
 }
 
 .header {
@@ -76,17 +101,3 @@ body {
     float: right;
   }
 } */
-
-.main {
-  padding: 0 1.5rem;
-}
-.main .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: 700;
-}
-
-.footer {
-  color: rgba(255, 255, 255, .5);
-}
-
-
