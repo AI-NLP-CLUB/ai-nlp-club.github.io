@@ -24,3 +24,8 @@
     border-radius: 50%;
 }
 
+
+.main-container{
+    max-width: 60em;
+    height: 100vh !important;
+}

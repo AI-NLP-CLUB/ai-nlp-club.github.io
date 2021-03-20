@@ -96,3 +96,10 @@
 .container{
   margin-top: 2rem !important;
 }
+
+.person-image img {
+    width: 200px; /* width of container */
+    height: 200px; /* height of container */
+    object-fit: cover;
+    border: 2px solid black;
+}

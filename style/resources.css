@@ -2,6 +2,9 @@
     color: black !important
 }
 
+.main{
+    max-width: 42em;
+}
 
 .card {
     border-radius: 10px !important

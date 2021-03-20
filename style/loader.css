@@ -1,0 +1,224 @@
+body.loaded {
+    overflow-y: auto;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+  }
+  .overlay .door:before, .overlay .door:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #111;
+    transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+    transition-delay: 0.8s;
+  }
+  .overlay .door:before {
+    left: 0;
+  }
+  .overlay .door:after {
+    right: 0;
+  }
+  .overlay.loaded .door:before {
+    left: -50%;
+  }
+  .overlay.loaded .door:after {
+    right: -50%;
+  }
+  .overlay.loaded .container {
+    opacity: 0;
+    margin-top: -15px;
+  }
+  .overlay .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  }
+  .overlay .container .skip {
+    display: block;
+    width: 130px;
+    text-align: center;
+    margin: 50px auto 0;
+    cursor: pointer;
+    color: #00FFFF;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    padding: 12px 0;
+    border: 2px solid #00FFFF;
+    border-radius: 0;
+    z-index: 2;
+    overflow: hidden;
+  }
+  .overlay .container .skip:hover {
+    color: #000;
+    background: #fff;
+    border: 2px solid #fff;
+  }
+  
+  .loader {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #00FFFF;
+    border-radius: 0;
+    position: relative;
+    -moz-animation: spin 6s linear infinite;
+    -webkit-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader .loader-two {
+    width: 90px;
+    height: 90px;
+    border: 3px solid #00FFFF;
+    border-radius: 0;
+    position: relative;
+    -moz-animation: spin 6s linear infinite;
+    -webkit-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader .loader-three {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #00FFFF;
+    border-radius: 0;
+    position: relative;
+    -moz-animation: spin 6s linear infinite;
+    -webkit-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader .loader-four {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #00FFFF;
+    border-radius: 0;
+    position: relative;
+    -moz-animation: spin 6s linear infinite;
+    -webkit-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader .loader-five {
+    width: 60px;
+    height: 60px;
+    border: 3px solid #00FFFF;
+    border-radius: 0;
+    position: relative;
+    -moz-animation: spin 6s linear infinite;
+    -webkit-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader .loader-six {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #00FFFF;
+    border-radius: 0;
+    position: relative;
+    -moz-animation: spin 6s linear infinite;
+    -webkit-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader .loader-seven {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #00FFFF;
+    border-radius: 0;
+    position: relative;
+    -moz-animation: spin 6s linear infinite;
+    -webkit-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader .loader-eight {
+    width: 30px;
+    height: 30px;
+    border: 3px solid #00FFFF;
+    border-radius: 0;
+    position: relative;
+    -moz-animation: spin 6s linear infinite;
+    -webkit-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader .loader-nine {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #00FFFF;
+    border-radius: 0;
+    position: relative;
+    -moz-animation: spin 6s linear infinite;
+    -webkit-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .loader .loader-ten {
+    width: 10px;
+    height: 10px;
+    border: 3px solid #00FFFF;
+    border-radius: 50%;
+    position: relative;
+    -moz-animation: spin 6s linear infinite;
+    -webkit-animation: spin 6s linear infinite;
+    animation: spin 6s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+@-moz-keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
