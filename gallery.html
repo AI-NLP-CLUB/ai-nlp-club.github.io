@@ -20,36 +20,12 @@
     <!-- Custom styles for this template -->
     <link href="style/base.css" rel="stylesheet">
     <link href="style/gallery.css" rel="stylesheet">
-    <link rel="stylesheet" href="style/loader.css">
+    <link rel="stylesheet" href="animations/style/loading.css">
 
   </head>
 
   <body class="text-center">
-    <div class="overlay">
-      <div class="door"></div>
-      <div class="container">
-        <div class="loader">
-          <div class="loader-two">
-            <div class="loader-three">
-              <div class="loader-four">
-                <div class="loader-five">
-                  <div class="loader-six">
-                    <div class="loader-seven">
-                      <div class="loader-eight">
-                        <div class="loader-nine">
-                          <div class="loader-ten">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- <canvas id="loading_canvas"></canvas> -->
     <div class="main-container d-flex h-100 p-3 mx-auto flex-column">
       
       <header class="header">
@@ -87,55 +63,22 @@
         </div>
       </header>
 
-      <main role="main" class="inner main">
-        <h1 class="main-heading">AILang-Pro'19</h1>
-        <h1 class="sub-heading">Intro</h1>
-        <div class="container page-top">
-            <div class="row" id="images-row-intro">
-                
-           </div>
-           <hr>
-
+      <main role="main" class="inner main mt-3">
+        <div class="nav">
+          <button class="btn btn-md btn-secondary filter-button m-2 active" data-filter="all">All</button>
+          <button class="btn btn-md btn-secondary filter-button m-2" data-filter="ai_lang_pro">AILang-Pro'19</button>
+          <button class="btn btn-md btn-secondary filter-button m-2" data-filter="workshop">Workshop</button>
+          <button class="btn btn-md btn-secondary filter-button m-2" data-filter="meteor">Meteor</button>
+          <button class="btn btn-md btn-secondary filter-button m-2" data-filter="ai_catechism">AI CATECHISM</button>
+          <button class="btn btn-md btn-secondary filter-button m-2" data-filter="innopreneurs">INNOPRENEURS</button>
+          <button class="btn btn-md btn-secondary filter-button m-2" data-filter="prize_distribution">Prize Distribution</button>
         </div>
-        <h1 class="sub-heading">Workshop</h1>
         <div class="container page-top">
-            <div class="row" id="images-row-workshop">
+            <div class="row" id="images-row">
                 
            </div>
            <hr>
-
-        </div>    
-        <h1 class="sub-heading">Meteor</h1>
-        <div class="container page-top">
-            <div class="row" id="images-row-meteor">
-                
-           </div>
-           <hr>
-
-        </div>    
-        <h1 class="sub-heading">Ai Cat</h1>
-        <div class="container page-top">
-            <div class="row" id="images-row-aicat">
-                
-           </div>
-           <hr>
-
-        </div>    
-        <h1 class="sub-heading">Innoprenour</h1>
-        <div class="container page-top">
-            <div class="row" id="images-row-inno">
-                
-           </div>
-           <hr>
-
-        </div>        
-        <h1 class="sub-heading">Prize Distribution</h1>
-        <div class="container page-top">
-            <div class="row" id="images-row-prize">
-                
-           </div>
-
-        </div>    
+        </div>   
 
       </main>
 
@@ -191,7 +134,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script src="script/gallery.js"></script>
-    <script src="script/loader.js"></script>
+    <script src="animations/script/loading.js"></script>
     <script>
 $(document).ready(function(){
   $(".fancybox").fancybox({
@@ -206,6 +149,26 @@ $(document).ready(function(){
         
 		$(this).removeClass('transition');
 	});
+
+  $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        $(".filter-button").removeClass("active");
+        $(this).addClass('active');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
 });
     </script>
 </body>
