@@ -14,10 +14,10 @@
     transition: padding .3s;
 }
 
-.section-staff .single-person:hover .person-image {
+/* .section-staff .single-person:hover .person-image {
 	padding: 12px;
     border: 4px dashed #fff;
-}
+} */
 
 .section-staff .single-person .person-image img {
 	width: 125px;

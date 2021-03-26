@@ -21,11 +21,11 @@
     <link href="style/base.css" rel="stylesheet">
     <link href="style/gallery.css" rel="stylesheet">
     <link rel="stylesheet" href="animations/style/loading.css">
-
+    <link rel="stylesheet" href="animations/style/background.css">
   </head>
 
   <body class="text-center">
-    <!-- <canvas id="loading_canvas"></canvas> -->
+    <canvas id="loading_canvas"></canvas>
     <div class="main-container d-flex h-100 p-3 mx-auto flex-column">
       
       <header class="header">
@@ -135,6 +135,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
     <script src="script/gallery.js"></script>
     <script src="animations/script/loading.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.5/lodash.min.js'></script>
+    <script src="animations/script/background.js"></script>
     <script>
 $(document).ready(function(){
   $(".fancybox").fancybox({

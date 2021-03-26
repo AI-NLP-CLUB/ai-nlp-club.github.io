@@ -1,9 +1,0 @@
-#brain-canvas{
-    display: inline-block;
-    position: relative;
-    top: 2%;
-    transform: translateY(-50%);
-    max-width: 50%;
-    max-height: 50%;
-    float: right;
-  }

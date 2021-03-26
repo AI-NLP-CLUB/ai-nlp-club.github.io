@@ -1,0 +1,14 @@
+
+canvas{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+html, body{
+    background-color: transparent !important;
+}
+.main-container{
+    z-index: 0;
+}
