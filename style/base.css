@@ -28,18 +28,6 @@ body {
 }
 
 
-.clg {
-  position: absolute;
-    top: 1.3rem;
-  left: 3rem;
-}
-
-.clg-logo {
-  border-radius: 100%;
-  height: 60px;
-  width: 60px;
-}
-
 
 .main-container {
   width: 100% !important;
